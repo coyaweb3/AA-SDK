@@ -2,9 +2,9 @@
 Guide on how to use wallet sdk in projects
 
 ## Download SDK source code
-Go to [sdk github page](https://github.com/ApeGame/AA-SDK),  clone code to local folder.
+Go to [sdk github page](https://github.com/coyaweb3/AA-SDK),  clone code to local folder.
 ```
-git clone https://github.com/ApeGame/AA-SDK.git
+git clone https://github.com/coyaweb3/AA-SDK.git
 ```
 notice:
 
