@@ -16,7 +16,7 @@ function App() {
   const [messageApi, contextHolder] = message.useMessage();
   const fromAddress = '0xa8D3697406225891b449a0940D824E1Af9E435C9';
   const toAddress = '0xa8D3697406225891b449a0940D824E1Af9E435C9';
-  const domain = 'wallet-dev.coya.biz';
+  const domain = 'wallet-dev.coya.biz'; //wallet address
   const protocol = 'https';
   aaWallet = new AAPopupSDK({
     storageType: 'localStorage',
