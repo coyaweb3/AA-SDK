@@ -106,7 +106,7 @@ const sendNative = async (connectType?: ConnectType) => {
 ```
 
 #### 2.send erc20 token transfer 
-Notice : can call smart contracts
+Notice : can call smart contracts method by this way
 ```typescript
 import { Interface, parseUnits, parseEther } from 'ethers';
 const sendToken = async () => {
