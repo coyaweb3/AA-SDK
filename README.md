@@ -117,7 +117,7 @@ const sendToken = async () => {
         parseUnits(erc20Amount, 18),
       ]);
       const tx = {
-        from: '',
+        from: '0xa8D3697406225891b449a0940D824E1Af9E435C9', //your AA account address, in local storage, key is AA-WALLET.
         to: erc20ContractAddress,
         value: '0x0',
         data: erc20TokenData,
