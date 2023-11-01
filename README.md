@@ -12,6 +12,9 @@ This folder is the SDK code : AA-SDK/src/popup-sdk .
 This  is the SDK sample code : AA-SDK/src/App.tsx .
 
 ## Run SDK example
+notice:
+nodejs version is v16.13.2  
+
 In the AA-SDK/src/popup-sdk directory, you can run:
 ```
  yarn install
