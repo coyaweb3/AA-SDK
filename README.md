@@ -136,3 +136,33 @@ const sendToken = async () => {
 
 ```
 
+# Getting Started with AA wallet sdk with no wallet page
+Guide on how to use wallet sdk in projects
+
+## Install from npm
+```typescript
+npm install --save aa-sdk-code
+```
+
+## How to use
+### 1.create sdk object
+```typescript
+let sdk = new AA_SDK('https://wallet-backend-dev.coya.biz', BlockchainNetworkId.ankrTest);
+```
+
+### 2.login with google credential
+```typescript
+let credential = "get this from google authentication"
+const result: boolean = await sdk.login(credential);
+```
+
+### 3.send native token  
+```typescript
+const result: boolean = await sdk.sendNative(toAddress, fromAddress, value);
+```
+
+### 3.send userOperation 
+```typescript
+// The data is compiled contract code
+const result: boolean = await sdk.sendOperation(toAddress, data);
+```
