@@ -158,11 +158,17 @@ const result: boolean = await sdk.login(credential);
 
 ### 3.send native token  
 ```typescript
-const result: boolean = await sdk.sendNative(toAddress, fromAddress, value);
+sdk.sendNative('to_address', '0.1');
 ```
 
 ### 3.send userOperation 
 ```typescript
 // The data is compiled contract code
-const result: boolean = await sdk.sendOperation(toAddress, data);
+import { Interface, parseUnits } from 'ethers';
+const erc20Interface = new Interface(['function transfer(address _to, uint256 _value)']);
+const erc20TokenData = erc20Interface.encodeFunctionData('transfer', [
+  'to_address',
+    parseUnits('1', 18),
+]);
+sdk.sendOperation('contract_address', erc20TokenData);
 ```
